@@ -1,38 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --primaryColor: #002459;
+}
 .App {
+  background-color: #fff;
+}
+.PrimaryBg svg {
+  fill: #fff;
+}
+
+.PrimaryBg {
+  background-color: var(--primaryColor);
+  color: #fff;
+  height: 100vh;
+}
+
+/* FIRST */
+
+.Logo {
+  font-size: 2rem;
+}
+button {
+  all: unset;
+  background-color: #28abff;
+  border-radius: 25px;
+  color: #fff;
+  padding: 8px 18px;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.First article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  gap: 3rem;
+}
+
+.LeftText {
+  width: 30vw;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+.LeftText span {
+  color: #28abff;
+}
+
+.LeftText p {
+  margin: 2rem 0;
+}
+
+.First aside {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.LogoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/* SECOND  */
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Second {
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ValueCard-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ValueCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* THIRD */
+.Third {
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: var(--primaryColor);
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Third .LeftText {
+  margin: 0 auto;
+}
+.Third h2 {
+  font-weight: 400;
+}
+.Third h3 {
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.Third .LeftText p {
+  font-weight: 100;
+}
+.TestimonialCard-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.TestimonialCard {
+  background-color: #fff;
+  color: var(--primaryColor);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 2rem;
+}
+
+.TestimonialCard p {
+  padding: 1rem 0;
+}
+
+.TestimonialCard span {
+  font-weight: 600;
 }
